@@ -146,8 +146,19 @@ O formulário inclui:
 
 ## 🚀 Como Executar o Projeto
 
-1. Faça o download ou clone o repositório
-2. Extraia o arquivo .zip (se necessário)
+### Opção 1: Clonar do GitHub
+```bash
+git clone https://github.com/oberdangom35/Site-Portfolio.git
+cd Site-Portfolio
+```
+Abra o arquivo `index.html` em um navegador moderno.
+
+### Opção 2: Acessar Online
+Acesse: **https://oberdangom35.github.io/Site-Portfolio/** (se GitHub Pages estiver habilitado)
+
+### Opção 3: Download Direto
+1. Faça o download do repositório
+2. Extraia o arquivo .zip
 3. Abra o arquivo `index.html` em um navegador moderno
 4. Navegue pelas seções usando o menu superior
 5. Teste o formulário de contato
