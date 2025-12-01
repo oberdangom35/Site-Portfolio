@@ -35,6 +35,13 @@ html {
     scroll-padding-top: 80px; /* Compensa a altura do navbar fixo */
 }
 
+/* Ajuste do scroll-padding para telas menores (mobile) */
+@media (max-width: 768px) {
+    html {
+        scroll-padding-top: 280px; /* Mais espaço em mobile para melhor visualização */
+    }
+}
+
 body {
     margin: 0;
     font-family: Arial, Helvetica, sans-serif;
@@ -171,6 +178,38 @@ h1, h2, h3 {
 
 .navbar-brand {
     color: var(--accent) !important;
+    padding: 0;
+}
+
+/* Logo Container */
+.logo-container {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    transition: all 0.3s ease;
+}
+
+.logo-name {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.5rem;
+    font-weight: 300;
+    color: var(--text);
+    letter-spacing: 1px;
+}
+
+.logo-chip {
+    font-size: 1.8rem;
+    color: var(--accent);
+    transition: all 0.3s ease;
+}
+
+.navbar-brand:hover .logo-chip {
+    transform: rotate(90deg);
+    color: #2563eb;
+}
+
+.navbar-brand:hover .logo-name {
+    color: var(--accent);
 }
 
 .nav-link {
@@ -475,10 +514,16 @@ h1, h2, h3 {
     border-radius: 8px;
     border: 1px solid rgba(0, 0, 0, 0.2);
     background: var(--bg);
-    color: var(--text);
+    color: var(--text-sec);
+    opacity: 0.6;
     font-size: 1rem;
-    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease, color 0.3s ease, opacity 0.3s ease;
     cursor: pointer;
+}
+
+.contato-form .form-select:valid {
+    color: var(--text);
+    opacity: 1;
 }
 
 .contato-form .form-select:focus {
@@ -491,6 +536,11 @@ h1, h2, h3 {
 .contato-form .form-select option {
     background: var(--bg);
     color: var(--text);
+}
+
+.contato-form .form-select option:disabled {
+    color: var(--text-sec);
+    opacity: 0.6;
 }
 
 .contato-form .form-check-label {
@@ -534,8 +584,14 @@ h1, h2, h3 {
     
     .contato-form .form-select {
         background: var(--bg);
-        color: var(--text);
+        color: var(--text-sec);
+        opacity: 0.6;
         border-color: rgba(255, 255, 255, 0.2);
+    }
+    
+    .contato-form .form-select:valid {
+        color: var(--text);
+        opacity: 1;
     }
     
     .contato-form .form-select:focus {
@@ -546,6 +602,12 @@ h1, h2, h3 {
     .contato-form .form-select option {
         background: var(--bg-sec);
         color: var(--text);
+    }
+    
+    .contato-form .form-select option:disabled {
+        color: var(--text-sec);
+        opacity: 0.6;
+        background: var(--bg-sec);
     }
     
     .contato-form .form-check-input {

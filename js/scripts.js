@@ -50,6 +50,29 @@ document.getElementById("formContato").addEventListener("submit", (e) => {
 // O tema é aplicado automaticamente via CSS @media (prefers-color-scheme)
 
 // --------------------
+// FECHAR MENU MOBILE AUTOMATICAMENTE
+// --------------------
+document.addEventListener('DOMContentLoaded', function() {
+    // Seleciona todos os links do menu
+    const navLinks = document.querySelectorAll('.navbar-nav .nav-link');
+    const navbarCollapse = document.querySelector('.navbar-collapse');
+    
+    // Adiciona evento de clique em cada link
+    navLinks.forEach(link => {
+        link.addEventListener('click', function() {
+            // Verifica se o menu está expandido (visível em mobile)
+            if (navbarCollapse.classList.contains('show')) {
+                // Usa o Bootstrap para fechar o menu
+                const bsCollapse = new bootstrap.Collapse(navbarCollapse, {
+                    toggle: false
+                });
+                bsCollapse.hide();
+            }
+        });
+    });
+});
+
+// --------------------
 // ANIMAÇÃO DOS CARDS - FORMAÇÃO
 // --------------------
 // Expande cards em dispositivos touch (mobile/tablet)

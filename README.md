@@ -14,6 +14,8 @@ Este é um site portfólio pessoal desenvolvido como projeto final da disciplina
 - **CSS3**: Estilização personalizada e responsividade
 - **JavaScript (ES6+)**: Interatividade e funcionalidades dinâmicas
 - **Bootstrap 5.3.2**: Framework CSS para layout responsivo e componentes
+- **Google Fonts**: Fonte Montserrat (Light 300) para a logo
+- **Bootstrap Icons**: Ícones vetoriais para interface
 
 ## 📁 Estrutura do Projeto
 
@@ -71,23 +73,30 @@ Portfolio/
 - Exibição dos dados enviados
 - Reset automático do formulário após envio
 
-### 3. Botão "Voltar ao Topo"
+### 3. Menu Mobile Responsivo
+- Fechamento automático do menu ao clicar em um item (apenas em mobile)
+- Detecção inteligente do estado do menu (expandido/recolhido)
+- Utiliza API nativa do Bootstrap Collapse
+- Melhora significativa na experiência do usuário mobile
+
+### 4. Botão "Voltar ao Topo"
 - Aparece após rolar 300px
 - Scroll suave ao clicar
 - Animação de entrada/saída
 
-### 4. Animação de Cards (Bonus)
+### 5. Animação de Cards (Bonus)
 - Efeito de entrada suave ao fazer scroll
 - Expansão de cards em dispositivos touch
 - Animação de hover nos cards de formação
 
-### 5. Inicialização de Componentes Bootstrap
+### 6. Inicialização de Componentes Bootstrap
 - Tooltips nos links sociais
 - Carousel automático com intervalo de 3 segundos
 
-### 6. Animações Interativas
+### 7. Animações Interativas
 - Animação pulse nos links sociais ao passar o mouse
 - Transições suaves em todos os elementos interativos
+- Rotação do ícone de chip na logo ao hover
 
 ## 🎯 Componentes Bootstrap Utilizados
 
@@ -98,6 +107,21 @@ Portfolio/
 5. **Buttons**: Botões estilizados no formulário e projetos
 6. **Forms**: Formulário de contato com validação
 7. **Tooltips**: Dicas visuais nos links sociais
+8. **Collapse**: Utilizado para controle do menu mobile
+
+## 🎨 Design e Identidade Visual
+
+### Logo Personalizada
+- **Design**: Iniciais "O G" + ícone de chip/processador
+- **Tipografia**: Fonte Montserrat Light (300) para elegância
+- **Interatividade**: Ícone rotaciona 90° ao hover
+- **Responsiva**: Adapta-se aos temas claro e escuro
+
+### Formulário de Contato Aprimorado
+- **Placeholder consistente**: Cor cinza (#555) com opacidade 0.6
+- **Select estilizado**: Texto placeholder em cinza, muda para branco quando selecionado
+- **Validação visual**: Estados `:valid` e `:invalid` com feedback de cor
+- **Acessibilidade**: Labels claros e ícones descritivos
 
 ## 📐 Responsividade
 
@@ -112,6 +136,7 @@ O site é totalmente responsivo e se adapta a diferentes tamanhos de tela:
 - Reorganização da seção "Sobre" em mobile
 - Redimensionamento de cards e imagens
 - Ajuste de tamanhos de fonte
+- **Scroll-padding ajustado para mobile**: 280px (vs 80px no desktop) para compensar a navbar e garantir visualização completa dos títulos das seções
 
 ## 🌓 Tema Claro/Escuro
 
@@ -176,12 +201,15 @@ Acesse: **https://oberdangom35.github.io/Site-Portfolio/** (se GitHub Pages esti
 - [x] Mínimo de 3 seções (5 seções implementadas)
 - [x] Formulário completo com validação
 - [x] Grid system do Bootstrap utilizado
-- [x] Mínimo de 2 componentes Bootstrap (7 componentes utilizados)
+- [x] Mínimo de 2 componentes Bootstrap (8 componentes utilizados)
 - [x] CSS personalizado para ajustes visuais
-- [x] Mínimo de 3 funcionalidades JavaScript (6 funcionalidades implementadas)
+- [x] Mínimo de 3 funcionalidades JavaScript (7 funcionalidades implementadas)
 - [x] Responsividade testada em desktop e mobile
 - [x] Tags semânticas HTML5
 - [x] README completo
+- [x] Logo personalizada com tipografia customizada
+- [x] Menu mobile com fechamento automático
+- [x] Scroll-padding otimizado para mobile
 
 ## 👨‍💻 Autor
 
