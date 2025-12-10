@@ -58,7 +58,7 @@ Portfolio/
 1. **Início (Hero)**: Apresentação com carousel automático
 2. **Sobre**: Informações pessoais e profissionais
 3. **Formação**: Graduações, pós-graduações e interesses
-4. **Projetos**: Estação Meteorológica Automatizada (OCGWeather Bot)
+4. **Projetos**: Estação Meteorológica Automatizada (em construção/desenvolvimento)
 5. **Contato**: Formulário de contato com validação
 
 ## ⚙️ Funcionalidades JavaScript Implementadas
@@ -192,7 +192,7 @@ cd Site-Portfolio
 Abra o arquivo `index.html` em um navegador moderno.
 
 ### Opção 2: Acessar Online
-Acesse: **https://oberdangom35.github.io/Site-Portfolio/** (se GitHub Pages estiver habilitado)
+Acesse: **https://oberdangom35.github.io/Site-Portfolio/**
 
 ### Opção 3: Download Direto
 1. Faça o download do repositório
@@ -207,26 +207,23 @@ Acesse: **https://oberdangom35.github.io/Site-Portfolio/** (se GitHub Pages esti
 - Microsoft Edge (versão 90+)
 - Safari (versão 14+)
 
-## ✅ Checklist de Requisitos Atendidos
+**Checklist para conferência antes da entrega**
 
-- [x] Tema definido: Portfólio Pessoal
-- [x] HTML + CSS + JavaScript + Bootstrap 5
-- [x] Mínimo de 3 seções (5 seções implementadas)
-- [x] Formulário completo com validação
-- [x] Grid system do Bootstrap utilizado
-- [x] Mínimo de 2 componentes Bootstrap (8 componentes utilizados)
-- [x] CSS personalizado para ajustes visuais
-- [x] Mínimo de 3 funcionalidades JavaScript (7 funcionalidades implementadas)
-- [x] Responsividade testada em desktop e mobile
-- [x] Tags semânticas HTML5
-- [x] README completo
-- [x] Logo personalizada com tipografia customizada (Montserrat)
-- [x] Menu mobile com fechamento automático ao clicar
-- [x] Scroll-padding otimizado para mobile (280px vs 80px desktop)
-- [x] Animações suaves nos cards (0.8s) para melhor UX
-- [x] Sistema completo de variáveis CSS para temas
-- [x] Footer com shadow invertida (sobe) para coerência visual
-- [x] Código CSS limpo e bem organizado (817 linhas)
+    [X] Optei por utilizar a seleção de tema Claro/Escuro automática de acordo com as definições do usuário;
+        O tema selecionado de forma automática é aplicado em todo o site, e a opção de fazer desta forma foi
+        para garantir a melhor experiencia ao usuário;
+    [X] Usei HTML + CSS + JavaScript + um framework CSS (via CDN);
+    [X] Tenho pelo menos 3 seções ou páginas principais (foram 5 seções implementadas);
+    [X] Criei um formulário com campos obrigatórios, botão de envio, validação e confirmação de envio;
+    [X] Usei o grid e pelo menos 2 componentes do framework (Utilizado o Grid System do Bootstrap e mais 8 componentes);
+    [X] Ajustei o visual com CSS próprio (cores, fontes, espaçamentos);
+    [X] Implementei pelo menos 3 funcionalidades em JavaScript (7 funcionalidades implementadas);
+    [X] Testei o site em tela grande (desktop) e em tela pequena (mobile);
+    [X] Compactei o projeto em um arquivo .zip;
+    [X] Criei e inclui o PLANEJAMNETO.MD detalhando a ideia de construção do Site;
+    [X] Criei e incluí o README.MD explicando meu projeto;
+    [X] Subi o projeto final no Github, mantendo-o online para falicitar os testes;
+
 
 ## 👨‍💻 Autor
 
