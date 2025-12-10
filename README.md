@@ -212,7 +212,7 @@ Acesse: **https://oberdangom35.github.io/Site-Portfolio/**
     [X] Optei por utilizar a seleção de tema Claro/Escuro automática de acordo com as definições do usuário;
         O tema selecionado de forma automática é aplicado em todo o site, e a opção de fazer desta forma foi
         para garantir a melhor experiencia ao usuário;
-    [X] Usei HTML + CSS + JavaScript + um framework CSS (via CDN);
+    [X] Usei HTML + CSS + JavaScript + um framework CSS (Bootstrap 5 via CDN);
     [X] Tenho pelo menos 3 seções ou páginas principais (foram 5 seções implementadas);
     [X] Criei um formulário com campos obrigatórios, botão de envio, validação e confirmação de envio;
     [X] Usei o grid e pelo menos 2 componentes do framework (Utilizado o Grid System do Bootstrap e mais 8 componentes);
