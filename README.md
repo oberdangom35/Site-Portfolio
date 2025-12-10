@@ -38,17 +38,19 @@ Portfolio/
 ## 🎨 Paleta de Cores
 
 ### Tema Claro
-- **Cor Principal**: `#3b82f6` (Azul)
-- **Cor de Fundo**: `#f5f5f5` (Cinza claro)
+- **Cor Principal**: `#3b82f6` (Azul vibrante)
+- **Cor Secundária**: `#60a5fa` (Azul claro)
+- **Cor de Fundo**: `#f5f5f5` (Cinza muito claro)
 - **Cor de Fundo Secundária**: `#ffffff` (Branco)
-- **Cor de Texto**: `#222222` (Preto)
+- **Cor de Texto**: `#222222` (Preto suave)
 - **Cor de Texto Secundária**: `#555555` (Cinza escuro)
 
-### Tema Escuro
+### Tema Escuro (Automático)
 - **Cor Principal**: `#60a5fa` (Azul claro)
+- **Cor Secundária**: `#3b82f6` (Azul vibrante)
 - **Cor de Fundo**: `#121212` (Preto)
-- **Cor de Fundo Secundária**: `#1e1e1e` (Cinza escuro)
-- **Cor de Texto**: `#e5e5e5` (Branco)
+- **Cor de Fundo Secundária**: `#1e1e1e` (Cinza muito escuro)
+- **Cor de Texto**: `#e5e5e5` (Branco suave)
 - **Cor de Texto Secundária**: `#cfcfcf` (Cinza claro)
 
 ## 📱 Seções do Site
@@ -84,19 +86,24 @@ Portfolio/
 - Scroll suave ao clicar
 - Animação de entrada/saída
 
-### 5. Animação de Cards (Bonus)
-- Efeito de entrada suave ao fazer scroll
-- Expansão de cards em dispositivos touch
-- Animação de hover nos cards de formação
+### 5. Animação de Cards
+- **Transições suaves**: Todas as animações dos cards com duração de 0.8s para máxima suavidade
+- **Efeito hover completo**: Transform, box-shadow, border-color, título, texto, ícones e badges animados
+- **Efeito de entrada**: Animação suave ao fazer scroll usando Intersection Observer
+- **Expansão em touch**: Cards expandem ao toque em dispositivos móveis
+- **Sincronização**: Todos os elementos do card animam de forma coordenada
 
 ### 6. Inicialização de Componentes Bootstrap
 - Tooltips nos links sociais
 - Carousel automático com intervalo de 3 segundos
 
 ### 7. Animações Interativas
-- Animação pulse nos links sociais ao passar o mouse
-- Transições suaves em todos os elementos interativos
-- Rotação do ícone de chip na logo ao hover
+- **Logo**: Rotação de 90° do ícone de chip ao hover
+- **Links sociais**: Animação pulse ao passar o mouse
+- **Cards de formação**: Elevação, mudança de cor e escala dos elementos (0.8s)
+- **Cards de projetos**: Elevação e rotação 360° do ícone (0.5s)
+- **Botão scroll to top**: Fade in/out e elevação ao hover
+- **Transições suaves**: Aplicadas em todos os elementos interativos
 
 ## 🎯 Componentes Bootstrap Utilizados
 
@@ -112,16 +119,19 @@ Portfolio/
 ## 🎨 Design e Identidade Visual
 
 ### Logo Personalizada
-- **Design**: Iniciais "O G" + ícone de chip/processador
-- **Tipografia**: Fonte Montserrat Light (300) para elegância
-- **Interatividade**: Ícone rotaciona 90° ao hover
-- **Responsiva**: Adapta-se aos temas claro e escuro
+- **Design**: Iniciais "O G" + ícone de chip/processador (Bootstrap Icons)
+- **Tipografia**: Fonte Montserrat Light (300) para elegância e modernidade
+- **Interatividade**: Ícone rotaciona 90° ao hover com transição suave
+- **Cores dinâmicas**: Nome muda para accent color ao hover
+- **Responsiva**: Adapta-se perfeitamente aos temas claro e escuro
 
 ### Formulário de Contato Aprimorado
-- **Placeholder consistente**: Cor cinza (#555) com opacidade 0.6
-- **Select estilizado**: Texto placeholder em cinza, muda para branco quando selecionado
-- **Validação visual**: Estados `:valid` e `:invalid` com feedback de cor
-- **Acessibilidade**: Labels claros e ícones descritivos
+- **Estilização consistente**: Todos os campos com border-radius de 8px e padding uniforme
+- **Placeholder dinâmico**: Cor cinza com opacidade 0.6, muda ao focar
+- **Select inteligente**: Texto placeholder em cinza, muda para cor normal quando selecionado
+- **Validação visual**: Estados `:valid`, `:invalid` e `:focus` com feedback de cor e box-shadow
+- **Tema adaptativo**: Cores e bordas ajustam-se automaticamente ao tema claro/escuro
+- **Acessibilidade**: Labels claros, ícones descritivos e foco visível
 
 ## 📐 Responsividade
 
@@ -142,10 +152,13 @@ O site é totalmente responsivo e se adapta a diferentes tamanhos de tela:
 
 O site detecta automaticamente a preferência de tema do sistema operacional do usuário através de `@media (prefers-color-scheme: dark)` e ajusta:
 
-- Cores de fundo e texto
-- Bordas e sombras
-- Logo do IFES (versão clara/escura)
-- Componentes do formulário
+- **Variáveis CSS**: Sistema completo de variáveis para cores (--bg, --text, --accent, etc.)
+- **Cores de fundo e texto**: Inversão completa para conforto visual
+- **Bordas e sombras**: Ajustadas para cada tema
+- **Logo do IFES**: Alternância automática entre versões clara/escura
+- **Componentes do formulário**: Inputs, selects e checkboxes adaptados
+- **Cards**: Background e bordas ajustados para melhor contraste
+- **Navbar**: Borda inferior e ícone do toggler invertidos no tema escuro
 
 ## 📝 Formulário de Contato
 
@@ -207,9 +220,13 @@ Acesse: **https://oberdangom35.github.io/Site-Portfolio/** (se GitHub Pages esti
 - [x] Responsividade testada em desktop e mobile
 - [x] Tags semânticas HTML5
 - [x] README completo
-- [x] Logo personalizada com tipografia customizada
-- [x] Menu mobile com fechamento automático
-- [x] Scroll-padding otimizado para mobile
+- [x] Logo personalizada com tipografia customizada (Montserrat)
+- [x] Menu mobile com fechamento automático ao clicar
+- [x] Scroll-padding otimizado para mobile (280px vs 80px desktop)
+- [x] Animações suaves nos cards (0.8s) para melhor UX
+- [x] Sistema completo de variáveis CSS para temas
+- [x] Footer com shadow invertida (sobe) para coerência visual
+- [x] Código CSS limpo e bem organizado (817 linhas)
 
 ## 👨‍💻 Autor
 

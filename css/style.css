@@ -8,7 +8,6 @@
     --text-sec: #555;
     --accent: #3b82f6;
 
-    /* INPUTS – versão clara */
     --input-bg: #f1f1f1;
     --input-border: rgba(0,0,0,0.18);
 }
@@ -21,24 +20,19 @@
         --text-sec: #cfcfcf;
         --accent: #60a5fa;
 
-        /* INPUTS – versão escura */
-        --input-bg: #2a2a2a;          
+        --input-bg: #2a2a2a;
         --input-border: rgba(255,255,255,0.18);
     }
 }
 
-/* -------------------------
-   Geral
----------------------------*/
 html {
     scroll-behavior: smooth;
-    scroll-padding-top: 80px; /* Compensa a altura do navbar fixo */
+    scroll-padding-top: 80px;
 }
 
-/* Ajuste do scroll-padding para telas menores (mobile) */
 @media (max-width: 768px) {
     html {
-        scroll-padding-top: 280px; /* Mais espaço em mobile para melhor visualização */
+        scroll-padding-top: 280px;
     }
 }
 
@@ -55,7 +49,7 @@ h1, h2, h3 {
 }
 
 /* -------------------------
-   BOTÕES CUSTOMIZADOS
+   BOTÕES
 ---------------------------*/
 .btn {
     display: inline-block;
@@ -66,7 +60,10 @@ h1, h2, h3 {
     text-decoration: none;
     margin-top: 15px;
 }
-.btn:hover { opacity: .9 }
+
+.btn:hover {
+    opacity: 0.9;
+}
 
 /* -------------------------
    CAROUSEL
@@ -99,7 +96,6 @@ h1, h2, h3 {
     margin: 0;
 }
 
-/* Estilo especial para o primeiro slide (apresentação com background CSS) */
 .carousel-item.hero-slide {
     background: linear-gradient(180deg, #3b82f6, #1e3a8a);
     height: 500px;
@@ -136,42 +132,40 @@ h1, h2, h3 {
     margin: 10px auto;
 }
 
-/* Responsividade do Carousel */
 @media (max-width: 768px) {
     .carousel,
     .carousel-item img {
         height: 300px;
     }
-    
+
     .carousel-item.hero-slide {
         height: 300px;
     }
-    
+
     .hero-slide-content {
         padding: 20px 15px;
     }
-    
+
     .hero-slide-content h1 {
         font-size: 1.5rem;
     }
-    
+
     .hero-slide-content h2 {
         font-size: 1rem;
     }
-    
+
     .hero-slide-content p {
         font-size: 0.9rem;
     }
-    
+
     .hero-slide-content .lead {
         font-size: 1rem;
     }
 }
 
 /* -------------------------
-   NAV (Bootstrap navbar customizada)
+   NAVBAR
 ---------------------------*/
-/* Navbar usa estilos do Bootstrap, customizações abaixo se necessário */
 .navbar {
     background: var(--bg-sec) !important;
 }
@@ -181,7 +175,6 @@ h1, h2, h3 {
     padding: 0;
 }
 
-/* Logo Container */
 .logo-container {
     display: flex;
     align-items: center;
@@ -222,24 +215,23 @@ h1, h2, h3 {
     color: var(--accent) !important;
 }
 
-/* Tema escuro para navbar */
 @media (prefers-color-scheme: dark) {
     .navbar {
         background: var(--bg-sec) !important;
         border-bottom: 1px solid rgba(255,255,255,0.1);
     }
-    
+
     .navbar-toggler {
         border-color: rgba(255,255,255,0.3);
     }
-    
+
     .navbar-toggler-icon {
         filter: invert(1);
     }
 }
 
 /* -------------------------
-   SEÇÕES
+   SEÇÕES GERAIS
 ---------------------------*/
 .section {
     padding: 40px 20px;
@@ -271,7 +263,6 @@ h1, h2, h3 {
     flex: 1;
 }
 
-/* Responsividade */
 @media (max-width: 768px) {
     .sobre-container {
         flex-direction: column;
@@ -290,15 +281,13 @@ h1, h2, h3 {
 }
 
 /* -------------------------
-   Cards Bootstrap - Formação
+   CARDS - FORMAÇÃO
 ---------------------------*/
-/* Cards da seção Formação com animação */
 #formacao .card {
     background: var(--bg-sec);
     border: 1px solid rgba(0, 0, 0, 0.125);
-    transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+    transition: transform 0.8s ease, box-shadow 0.8s ease, border-color 0.8s ease;
     overflow: hidden;
-    position: relative;
 }
 
 #formacao .card:hover {
@@ -316,7 +305,7 @@ h1, h2, h3 {
     color: var(--text);
     font-weight: 600;
     margin-bottom: 10px;
-    transition: color 0.3s ease;
+    transition: color 0.8s ease;
 }
 
 #formacao .card:hover .card-title {
@@ -329,7 +318,7 @@ h1, h2, h3 {
     max-height: 0;
     opacity: 0;
     overflow: hidden;
-    transition: max-height 0.4s ease, opacity 0.4s ease, margin-top 0.4s ease;
+    transition: max-height 0.8s ease, opacity 0.8s ease, margin-top 0.8s ease;
 }
 
 #formacao .card:hover .card-text,
@@ -339,36 +328,33 @@ h1, h2, h3 {
     margin-top: 8px;
 }
 
-/* Ícones dos cards */
 #formacao .card-icon {
     text-align: center;
     margin-bottom: 15px;
 }
 
 #formacao .card-icon i {
-    transition: transform 0.3s ease, color 0.3s ease;
+    transition: transform 0.8s ease, color 0.8s ease;
 }
 
 #formacao .card:hover .card-icon i {
     transform: scale(1.2) rotate(5deg);
 }
 
-/* Badge no card em andamento */
 #formacao .badge {
-    transition: transform 0.3s ease;
+    transition: transform 0.8s ease;
 }
 
 #formacao .card:hover .badge {
     transform: scale(1.1);
 }
 
-/* Tema escuro para cards */
 @media (prefers-color-scheme: dark) {
     #formacao .card {
         background: var(--bg-sec);
         border-color: rgba(255, 255, 255, 0.125);
     }
-    
+
     #formacao .card:hover {
         background: #252525;
         border-color: var(--accent);
@@ -376,26 +362,25 @@ h1, h2, h3 {
     }
 }
 
-/* Responsividade para cards em mobile */
 @media (max-width: 768px) {
     #formacao .card-text {
         max-height: 200px;
         opacity: 1;
         margin-top: 8px;
     }
-    
+
     #formacao .card {
         cursor: pointer;
     }
 }
 
 /* -------------------------
-   Cards de Projetos
+   CARDS - PROJETOS
 ---------------------------*/
 #projetos .projeto-card {
     background: var(--bg-sec);
     border: 1px solid rgba(0, 0, 0, 0.125);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    transition: transform 0.5s ease, box-shadow 0.5s ease;
 }
 
 #projetos .projeto-card:hover {
@@ -424,25 +409,24 @@ h1, h2, h3 {
     transform: rotate(360deg);
 }
 
-/* Tema escuro para cards de projetos */
 @media (prefers-color-scheme: dark) {
     #projetos .projeto-card {
         background: var(--bg-sec);
         border-color: rgba(255, 255, 255, 0.125);
     }
-    
+
     #projetos .projeto-card:hover {
         background: #252525;
         box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
     }
-    
+
     #projetos .card-text {
         color: var(--text);
     }
 }
 
 /* -------------------------
-   Cards Gerais (outras seções)
+   CARDS GERAIS
 ---------------------------*/
 .card {
     background: var(--bg-sec);
@@ -462,7 +446,7 @@ h1, h2, h3 {
 }
 
 /* -------------------------
-   Formulário de Contato
+   FORMULÁRIO DE CONTATO
 ---------------------------*/
 #contato .contato-card {
     background: var(--bg-sec);
@@ -564,88 +548,74 @@ h1, h2, h3 {
     box-shadow: 0 0 0 0.25rem rgba(59, 130, 246, 0.25);
 }
 
-/* Tema escuro para formulário */
 @media (prefers-color-scheme: dark) {
     #contato .contato-card {
         background: var(--bg-sec);
         border-color: rgba(255, 255, 255, 0.125);
     }
-    
+
     .contato-form .form-control {
         background: var(--bg);
         color: var(--text);
         border-color: rgba(255, 255, 255, 0.2);
     }
-    
+
     .contato-form .form-control:focus {
         background: var(--bg);
         border-color: var(--accent);
     }
-    
+
     .contato-form .form-select {
         background: var(--bg);
         color: var(--text-sec);
         opacity: 0.6;
         border-color: rgba(255, 255, 255, 0.2);
     }
-    
+
     .contato-form .form-select:valid {
         color: var(--text);
         opacity: 1;
     }
-    
+
     .contato-form .form-select:focus {
         background: var(--bg);
         border-color: var(--accent);
     }
-    
+
     .contato-form .form-select option {
         background: var(--bg-sec);
         color: var(--text);
     }
-    
+
     .contato-form .form-select option:disabled {
         color: var(--text-sec);
         opacity: 0.6;
         background: var(--bg-sec);
     }
-    
+
     .contato-form .form-check-input {
         background-color: var(--bg);
         border-color: rgba(255, 255, 255, 0.3);
     }
-    
+
     .contato-form .form-check-input:checked {
         background-color: var(--accent);
         border-color: var(--accent);
     }
-    
-    .social-link i {
-        font-size: 1.5rem;
-    }
-    
-    .scroll-top-btn {
-        bottom: 20px;
-        right: 20px;
-        width: 45px;
-        height: 45px;
-        font-size: 1.3rem;
-    }
 }
 
 /* -------------------------
-   Footer Moderno
+   FOOTER
 ---------------------------*/
 .footer-modern {
     background: var(--bg-sec);
     color: var(--text);
     margin-top: 60px;
     padding: 20px 0;
-    border-top: 2px solid var(--accent);
     position: relative;
+    box-shadow: 0 -0.125rem 0.25rem rgba(0, 0, 0, 0.075);
 }
 
-/* Logo IFES */
 .footer-logo {
     max-width: 220px;
     height: auto;
@@ -656,7 +626,6 @@ h1, h2, h3 {
     transform: scale(1.05);
 }
 
-/* Alternância de logo baseada no tema */
 .footer-logo-dark {
     display: none;
 }
@@ -669,7 +638,7 @@ h1, h2, h3 {
     .footer-logo-dark {
         display: block;
     }
-    
+
     .footer-logo-light {
         display: none;
     }
@@ -758,7 +727,6 @@ h1, h2, h3 {
     transform: scale(1.2);
 }
 
-/* Botão Scroll to Top */
 .scroll-top-btn {
     position: fixed;
     bottom: 30px;
@@ -795,18 +763,16 @@ h1, h2, h3 {
     justify-content: center;
 }
 
-/* Tema escuro para footer */
 @media (prefers-color-scheme: dark) {
     .footer-modern {
         background: var(--bg-sec);
-        border-top-color: var(--accent);
     }
-    
+
     .social-link {
         background: var(--bg);
         border-color: rgba(255, 255, 255, 0.2);
     }
-    
+
     .social-link:hover {
         background: #252525;
         border-color: var(--accent);
@@ -814,12 +780,11 @@ h1, h2, h3 {
     }
 }
 
-/* Responsividade do footer */
 @media (max-width: 768px) {
     .footer-logo {
         max-width: 100px;
     }
-    
+
     .footer-text {
         font-size: 1rem;
     }
